@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95C8F6D72670F5CF008B0067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8F6D62670F5CF008B0067 /* AppDelegate.swift */; };
+		95C8F6D92670F5CF008B0067 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8F6D82670F5CF008B0067 /* SceneDelegate.swift */; };
+		95C8F6DB2670F5CF008B0067 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8F6DA2670F5CF008B0067 /* ViewController.swift */; };
+		95C8F6DE2670F5CF008B0067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C8F6DC2670F5CF008B0067 /* Main.storyboard */; };
+		95C8F6E02670F5D1008B0067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C8F6DF2670F5D1008B0067 /* Assets.xcassets */; };
+		95C8F6E32670F5D1008B0067 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C8F6E12670F5D1008B0067 /* LaunchScreen.storyboard */; };
+		95C8F6EE2670F5D1008B0067 /* GigiMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8F6ED2670F5D1008B0067 /* GigiMoviesTests.swift */; };
+		95C8F6F92670F5D1008B0067 /* GigiMoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8F6F82670F5D1008B0067 /* GigiMoviesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95C8F6EA2670F5D1008B0067 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C8F6CB2670F5CF008B0067 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95C8F6D22670F5CF008B0067;
+			remoteInfo = GigiMovies;
+		};
+		95C8F6F52670F5D1008B0067 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C8F6CB2670F5CF008B0067 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95C8F6D22670F5CF008B0067;
+			remoteInfo = GigiMovies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		95C8F6D32670F5CF008B0067 /* GigiMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GigiMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C8F6D62670F5CF008B0067 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95C8F6D82670F5CF008B0067 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		95C8F6DA2670F5CF008B0067 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95C8F6DD2670F5CF008B0067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95C8F6DF2670F5D1008B0067 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95C8F6E22670F5D1008B0067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95C8F6E42670F5D1008B0067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C8F6E92670F5D1008B0067 /* GigiMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GigiMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C8F6ED2670F5D1008B0067 /* GigiMoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigiMoviesTests.swift; sourceTree = "<group>"; };
+		95C8F6EF2670F5D1008B0067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C8F6F42670F5D1008B0067 /* GigiMoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GigiMoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C8F6F82670F5D1008B0067 /* GigiMoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigiMoviesUITests.swift; sourceTree = "<group>"; };
+		95C8F6FA2670F5D1008B0067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95C8F6D02670F5CF008B0067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C8F6E62670F5D1008B0067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C8F6F12670F5D1008B0067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95C8F6CA2670F5CF008B0067 = {
+			isa = PBXGroup;
+			children = (
+				95C8F6D52670F5CF008B0067 /* GigiMovies */,
+				95C8F6EC2670F5D1008B0067 /* GigiMoviesTests */,
+				95C8F6F72670F5D1008B0067 /* GigiMoviesUITests */,
+				95C8F6D42670F5CF008B0067 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95C8F6D42670F5CF008B0067 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95C8F6D32670F5CF008B0067 /* GigiMovies.app */,
+				95C8F6E92670F5D1008B0067 /* GigiMoviesTests.xctest */,
+				95C8F6F42670F5D1008B0067 /* GigiMoviesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95C8F6D52670F5CF008B0067 /* GigiMovies */ = {
+			isa = PBXGroup;
+			children = (
+				95C8F6D62670F5CF008B0067 /* AppDelegate.swift */,
+				95C8F6D82670F5CF008B0067 /* SceneDelegate.swift */,
+				95C8F6DA2670F5CF008B0067 /* ViewController.swift */,
+				95C8F6DC2670F5CF008B0067 /* Main.storyboard */,
+				95C8F6DF2670F5D1008B0067 /* Assets.xcassets */,
+				95C8F6E12670F5D1008B0067 /* LaunchScreen.storyboard */,
+				95C8F6E42670F5D1008B0067 /* Info.plist */,
+			);
+			path = GigiMovies;
+			sourceTree = "<group>";
+		};
+		95C8F6EC2670F5D1008B0067 /* GigiMoviesTests */ = {
+			isa = PBXGroup;
+			children = (
+				95C8F6ED2670F5D1008B0067 /* GigiMoviesTests.swift */,
+				95C8F6EF2670F5D1008B0067 /* Info.plist */,
+			);
+			path = GigiMoviesTests;
+			sourceTree = "<group>";
+		};
+		95C8F6F72670F5D1008B0067 /* GigiMoviesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				95C8F6F82670F5D1008B0067 /* GigiMoviesUITests.swift */,
+				95C8F6FA2670F5D1008B0067 /* Info.plist */,
+			);
+			path = GigiMoviesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95C8F6D22670F5CF008B0067 /* GigiMovies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C8F6FD2670F5D1008B0067 /* Build configuration list for PBXNativeTarget "GigiMovies" */;
+			buildPhases = (
+				95C8F6CF2670F5CF008B0067 /* Sources */,
+				95C8F6D02670F5CF008B0067 /* Frameworks */,
+				95C8F6D12670F5CF008B0067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GigiMovies;
+			productName = GigiMovies;
+			productReference = 95C8F6D32670F5CF008B0067 /* GigiMovies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95C8F6E82670F5D1008B0067 /* GigiMoviesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C8F7002670F5D1008B0067 /* Build configuration list for PBXNativeTarget "GigiMoviesTests" */;
+			buildPhases = (
+				95C8F6E52670F5D1008B0067 /* Sources */,
+				95C8F6E62670F5D1008B0067 /* Frameworks */,
+				95C8F6E72670F5D1008B0067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95C8F6EB2670F5D1008B0067 /* PBXTargetDependency */,
+			);
+			name = GigiMoviesTests;
+			productName = GigiMoviesTests;
+			productReference = 95C8F6E92670F5D1008B0067 /* GigiMoviesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		95C8F6F32670F5D1008B0067 /* GigiMoviesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C8F7032670F5D1008B0067 /* Build configuration list for PBXNativeTarget "GigiMoviesUITests" */;
+			buildPhases = (
+				95C8F6F02670F5D1008B0067 /* Sources */,
+				95C8F6F12670F5D1008B0067 /* Frameworks */,
+				95C8F6F22670F5D1008B0067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95C8F6F62670F5D1008B0067 /* PBXTargetDependency */,
+			);
+			name = GigiMoviesUITests;
+			productName = GigiMoviesUITests;
+			productReference = 95C8F6F42670F5D1008B0067 /* GigiMoviesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95C8F6CB2670F5CF008B0067 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					95C8F6D22670F5CF008B0067 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					95C8F6E82670F5D1008B0067 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 95C8F6D22670F5CF008B0067;
+					};
+					95C8F6F32670F5D1008B0067 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 95C8F6D22670F5CF008B0067;
+					};
+				};
+			};
+			buildConfigurationList = 95C8F6CE2670F5CF008B0067 /* Build configuration list for PBXProject "GigiMovies" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95C8F6CA2670F5CF008B0067;
+			productRefGroup = 95C8F6D42670F5CF008B0067 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95C8F6D22670F5CF008B0067 /* GigiMovies */,
+				95C8F6E82670F5D1008B0067 /* GigiMoviesTests */,
+				95C8F6F32670F5D1008B0067 /* GigiMoviesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95C8F6D12670F5CF008B0067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C8F6E32670F5D1008B0067 /* LaunchScreen.storyboard in Resources */,
+				95C8F6E02670F5D1008B0067 /* Assets.xcassets in Resources */,
+				95C8F6DE2670F5CF008B0067 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C8F6E72670F5D1008B0067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C8F6F22670F5D1008B0067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95C8F6CF2670F5CF008B0067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C8F6DB2670F5CF008B0067 /* ViewController.swift in Sources */,
+				95C8F6D72670F5CF008B0067 /* AppDelegate.swift in Sources */,
+				95C8F6D92670F5CF008B0067 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C8F6E52670F5D1008B0067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C8F6EE2670F5D1008B0067 /* GigiMoviesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C8F6F02670F5D1008B0067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C8F6F92670F5D1008B0067 /* GigiMoviesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95C8F6EB2670F5D1008B0067 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95C8F6D22670F5CF008B0067 /* GigiMovies */;
+			targetProxy = 95C8F6EA2670F5D1008B0067 /* PBXContainerItemProxy */;
+		};
+		95C8F6F62670F5D1008B0067 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95C8F6D22670F5CF008B0067 /* GigiMovies */;
+			targetProxy = 95C8F6F52670F5D1008B0067 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95C8F6DC2670F5CF008B0067 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95C8F6DD2670F5CF008B0067 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95C8F6E12670F5D1008B0067 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95C8F6E22670F5D1008B0067 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95C8F6FB2670F5D1008B0067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95C8F6FC2670F5D1008B0067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95C8F6FE2670F5D1008B0067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GigiMovies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = n2devcode.GigiMovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95C8F6FF2670F5D1008B0067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GigiMovies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = n2devcode.GigiMovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		95C8F7012670F5D1008B0067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GigiMoviesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = n2devcode.GigiMoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GigiMovies.app/GigiMovies";
+			};
+			name = Debug;
+		};
+		95C8F7022670F5D1008B0067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GigiMoviesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = n2devcode.GigiMoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GigiMovies.app/GigiMovies";
+			};
+			name = Release;
+		};
+		95C8F7042670F5D1008B0067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GigiMoviesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = n2devcode.GigiMoviesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GigiMovies;
+			};
+			name = Debug;
+		};
+		95C8F7052670F5D1008B0067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GigiMoviesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = n2devcode.GigiMoviesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GigiMovies;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95C8F6CE2670F5CF008B0067 /* Build configuration list for PBXProject "GigiMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C8F6FB2670F5D1008B0067 /* Debug */,
+				95C8F6FC2670F5D1008B0067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95C8F6FD2670F5D1008B0067 /* Build configuration list for PBXNativeTarget "GigiMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C8F6FE2670F5D1008B0067 /* Debug */,
+				95C8F6FF2670F5D1008B0067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95C8F7002670F5D1008B0067 /* Build configuration list for PBXNativeTarget "GigiMoviesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C8F7012670F5D1008B0067 /* Debug */,
+				95C8F7022670F5D1008B0067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95C8F7032670F5D1008B0067 /* Build configuration list for PBXNativeTarget "GigiMoviesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C8F7042670F5D1008B0067 /* Debug */,
+				95C8F7052670F5D1008B0067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95C8F6CB2670F5CF008B0067 /* Project object */;
+}
