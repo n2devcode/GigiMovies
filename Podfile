@@ -6,6 +6,7 @@ target 'GigiMovies' do
   use_frameworks!
 
   # Pods for GigiMovies
+  pod 'Alamofire', '~> 5.4'
 
   target 'GigiMoviesTests' do
     inherit! :search_paths
