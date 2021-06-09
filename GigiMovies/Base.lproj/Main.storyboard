@@ -102,6 +102,7 @@
                     <connections>
                         <outlet property="buttonAll" destination="O01-IS-MYH" id="dh8-6V-wNz"/>
                         <outlet property="buttonFavorites" destination="xpB-KJ-eSF" id="DkP-mp-NtY"/>
+                        <outlet property="moviesView" destination="9q1-Pg-V2K" id="7hv-Fm-yEg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

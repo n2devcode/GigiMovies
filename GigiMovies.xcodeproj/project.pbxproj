@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,16 @@
 		95C8F6E32670F5D1008B0067 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C8F6E12670F5D1008B0067 /* LaunchScreen.storyboard */; };
 		95C8F6EE2670F5D1008B0067 /* GigiMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8F6ED2670F5D1008B0067 /* GigiMoviesTests.swift */; };
 		95C8F6F92670F5D1008B0067 /* GigiMoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8F6F82670F5D1008B0067 /* GigiMoviesUITests.swift */; };
+		95DF93192670FD16007CCF8F /* LoadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95DF93152670FD16007CCF8F /* LoadView.xib */; };
+		95DF931A2670FD16007CCF8F /* LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF93162670FD16007CCF8F /* LoadView.swift */; };
+		95DF931B2670FD16007CCF8F /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF93172670FD16007CCF8F /* ErrorView.swift */; };
+		95DF931C2670FD16007CCF8F /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95DF93182670FD16007CCF8F /* ErrorView.xib */; };
+		95DF93242670FD87007CCF8F /* load.gif in Resources */ = {isa = PBXBuildFile; fileRef = 95DF93212670FD86007CCF8F /* load.gif */; };
+		95DF93252670FD87007CCF8F /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF93222670FD86007CCF8F /* Protocols.swift */; };
+		95DF93262670FD87007CCF8F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF93232670FD87007CCF8F /* Utils.swift */; };
+		95DF932E2670FDF1007CCF8F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF932D2670FDF1007CCF8F /* BaseViewController.swift */; };
+		95DF933C2670FEBB007CCF8F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF933B2670FEBB007CCF8F /* UIImage+Extension.swift */; };
+		95DF93472670FEE2007CCF8F /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF93462670FEE2007CCF8F /* UIImageView+Extension.swift */; };
 		F1A0204E86513B028ABB88EB /* Pods_GigiMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5D5C2906F835DD567ABF0B /* Pods_GigiMovies.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +70,16 @@
 		95C8F6F42670F5D1008B0067 /* GigiMoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GigiMoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C8F6F82670F5D1008B0067 /* GigiMoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigiMoviesUITests.swift; sourceTree = "<group>"; };
 		95C8F6FA2670F5D1008B0067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95DF93152670FD16007CCF8F /* LoadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadView.xib; sourceTree = "<group>"; };
+		95DF93162670FD16007CCF8F /* LoadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadView.swift; sourceTree = "<group>"; };
+		95DF93172670FD16007CCF8F /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		95DF93182670FD16007CCF8F /* ErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
+		95DF93212670FD86007CCF8F /* load.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load.gif; sourceTree = "<group>"; };
+		95DF93222670FD86007CCF8F /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		95DF93232670FD87007CCF8F /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		95DF932D2670FDF1007CCF8F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		95DF933B2670FEBB007CCF8F /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		95DF93462670FEE2007CCF8F /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		AAC5C0A9C317E1AEBB12EB08 /* Pods-GigiMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GigiMovies.debug.xcconfig"; path = "Target Support Files/Pods-GigiMovies/Pods-GigiMovies.debug.xcconfig"; sourceTree = "<group>"; };
 		ACA75641819A95FCF29B022F /* Pods-GigiMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GigiMovies.release.xcconfig"; path = "Target Support Files/Pods-GigiMovies/Pods-GigiMovies.release.xcconfig"; sourceTree = "<group>"; };
 		B564F600C1975F6EC3E28DED /* Pods_GigiMoviesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GigiMoviesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +165,7 @@
 		95C8F6D52670F5CF008B0067 /* GigiMovies */ = {
 			isa = PBXGroup;
 			children = (
+				95DF930E2670FC89007CCF8F /* Feature */,
 				95C8F6D62670F5CF008B0067 /* AppDelegate.swift */,
 				95C8F6D82670F5CF008B0067 /* SceneDelegate.swift */,
 				95C8F6DA2670F5CF008B0067 /* ViewController.swift */,
@@ -172,6 +193,71 @@
 				95C8F6FA2670F5D1008B0067 /* Info.plist */,
 			);
 			path = GigiMoviesUITests;
+			sourceTree = "<group>";
+		};
+		95DF930E2670FC89007CCF8F /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				95DF930F2670FC8F007CCF8F /* Movies */,
+				95DF932A2670FDD2007CCF8F /* Base */,
+				95DF93202670FD4C007CCF8F /* Utils */,
+				95DF933A2670FEA7007CCF8F /* Extension */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		95DF930F2670FC8F007CCF8F /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				95DF93102670FC93007CCF8F /* Controller */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		95DF93102670FC93007CCF8F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				95DF93172670FD16007CCF8F /* ErrorView.swift */,
+				95DF93182670FD16007CCF8F /* ErrorView.xib */,
+				95DF93162670FD16007CCF8F /* LoadView.swift */,
+				95DF93152670FD16007CCF8F /* LoadView.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		95DF93202670FD4C007CCF8F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				95DF93212670FD86007CCF8F /* load.gif */,
+				95DF93222670FD86007CCF8F /* Protocols.swift */,
+				95DF93232670FD87007CCF8F /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		95DF932A2670FDD2007CCF8F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				95DF932B2670FDD9007CCF8F /* Controllers */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		95DF932B2670FDD9007CCF8F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				95DF932D2670FDF1007CCF8F /* BaseViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		95DF933A2670FEA7007CCF8F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				95DF933B2670FEBB007CCF8F /* UIImage+Extension.swift */,
+				95DF93462670FEE2007CCF8F /* UIImageView+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +372,9 @@
 				95C8F6E32670F5D1008B0067 /* LaunchScreen.storyboard in Resources */,
 				95C8F6E02670F5D1008B0067 /* Assets.xcassets in Resources */,
 				95A24EFA2670F6E1002E2769 /* README.md in Resources */,
+				95DF93242670FD87007CCF8F /* load.gif in Resources */,
+				95DF931C2670FD16007CCF8F /* ErrorView.xib in Resources */,
+				95DF93192670FD16007CCF8F /* LoadView.xib in Resources */,
 				95C8F6DE2670F5CF008B0067 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +503,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95DF93472670FEE2007CCF8F /* UIImageView+Extension.swift in Sources */,
+				95DF931B2670FD16007CCF8F /* ErrorView.swift in Sources */,
+				95DF931A2670FD16007CCF8F /* LoadView.swift in Sources */,
 				95C8F6DB2670F5CF008B0067 /* ViewController.swift in Sources */,
+				95DF93262670FD87007CCF8F /* Utils.swift in Sources */,
+				95DF93252670FD87007CCF8F /* Protocols.swift in Sources */,
+				95DF932E2670FDF1007CCF8F /* BaseViewController.swift in Sources */,
+				95DF933C2670FEBB007CCF8F /* UIImage+Extension.swift in Sources */,
 				95C8F6D72670F5CF008B0067 /* AppDelegate.swift in Sources */,
 				95C8F6D92670F5CF008B0067 /* SceneDelegate.swift in Sources */,
 			);
