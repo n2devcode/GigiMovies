@@ -1,0 +1,6 @@
+framework module Pods_GigiMovies {
+  umbrella header "Pods-GigiMovies-umbrella.h"
+
+  export *
+  module * { export * }
+}
