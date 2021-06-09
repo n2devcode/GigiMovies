@@ -38,6 +38,9 @@
                 <constraint firstItem="NWR-iH-xy4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="80" id="kT4-kZ-buz"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fPX-w3-FEK" secondAttribute="trailing" constant="60" id="kdL-LZ-fs1"/>
             </constraints>
+            <connections>
+                <outlet property="emptyLabel" destination="fPX-w3-FEK" id="VAJ-AK-xnu"/>
+            </connections>
             <point key="canvasLocation" x="141" y="111"/>
         </view>
     </objects>

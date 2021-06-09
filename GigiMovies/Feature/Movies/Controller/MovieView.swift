@@ -36,19 +36,13 @@ class MovieView: UIView {
         } else {
             moviesVC.moviesVM.getDataSearch(title: moviesVC.movieSearch) {
                 if self.moviesVC.moviesVM.movieListVM.count == 0 {
-                    self.loadEmptyView()
+                    self.moviesVC.loadEmptyView(self.movieTableView, text: "No hay ningún resultado para esta búsqueda")
                 } else {
                     self.loadTable()
                 }
             } loadError: {
                 self.moviesVC.showErrorView(self.moviesVC.moviesView)
             }
-        }
-    }
-    
-    private func loadEmptyView() {
-        if let subview = self.moviesVC.loadView("EmptyView") as? EmptyView {
-            self.moviesVC.addSubview(view: movieTableView, subview: subview)
         }
     }
     

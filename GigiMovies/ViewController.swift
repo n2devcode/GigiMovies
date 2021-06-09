@@ -9,7 +9,9 @@ import UIKit
 
 class ViewController: BaseViewController {
     @IBOutlet weak var buttonAll: UIButton!
+    @IBOutlet weak var tabAllView: UIView!
     @IBOutlet weak var buttonFavorites: UIButton!
+    @IBOutlet weak var tabFavoritesView: UIView!
     @IBOutlet weak var moviesView: UIView!
     
     let moviesVM = MovieListViewModel()
@@ -26,6 +28,7 @@ class ViewController: BaseViewController {
     }
     
     override func loadData() {
+        setAlphaTabs(all: true)
         if Utils.isConnectedToNetwork() {
             showLoadView(moviesView)
             moviesVM.getData {
@@ -59,8 +62,23 @@ class ViewController: BaseViewController {
         }
     }
     
+    private func setAlphaTabs(all: Bool) {
+        buttonAll.alpha = all ? 1 : Constants.alphaTab
+        tabAllView.alpha = all ? 1 : Constants.alphaTab
+        buttonFavorites.alpha = all ? Constants.alphaTab : 1
+        tabFavoritesView.alpha = all ? Constants.alphaTab : 1
+    }
+    
     private func showFavoritesMoviesView() {
-        
+        setAlphaTabs(all: false)
+        loadEmptyView(moviesView, text: "No tienes favoritas aún")
+    }
+    
+    func loadEmptyView(_ view: UIView, text: String) {
+        if let subview = self.loadView("EmptyView") as? EmptyView {
+            subview.emptyLabel.text = text
+            self.addSubview(view: view, subview: subview)
+        }
     }
 }
 

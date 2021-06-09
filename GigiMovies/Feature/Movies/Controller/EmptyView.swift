@@ -8,5 +8,5 @@
 import UIKit
 
 class EmptyView: UIView {
-    
+    @IBOutlet weak var emptyLabel: UILabel!
 }

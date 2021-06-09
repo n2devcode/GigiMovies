@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Constants {
     static let baseURL = "https://api.themoviedb.org/3"
@@ -16,4 +17,6 @@ class Constants {
     static let noData = "-"
     static let noInt = -1
     static let noDouble: Double = 0
+    
+    static let alphaTab: CGFloat = 0.3
 }
