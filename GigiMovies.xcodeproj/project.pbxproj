@@ -50,6 +50,8 @@
 		95DF93FF267135CB007CCF8F /* MovieView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95DF93FE267135CB007CCF8F /* MovieView.xib */; };
 		95DF9407267137C0007CCF8F /* MovieListSearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF9406267137C0007CCF8F /* MovieListSearchDataSource.swift */; };
 		95DF940C267137FF007CCF8F /* MovieListSearchDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF940B267137FF007CCF8F /* MovieListSearchDataSourceTests.swift */; };
+		95DF941526714469007CCF8F /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF941326714469007CCF8F /* EmptyView.swift */; };
+		95DF941626714469007CCF8F /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95DF941426714469007CCF8F /* EmptyView.xib */; };
 		F1A0204E86513B028ABB88EB /* Pods_GigiMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5D5C2906F835DD567ABF0B /* Pods_GigiMovies.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +124,8 @@
 		95DF93FE267135CB007CCF8F /* MovieView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieView.xib; sourceTree = "<group>"; };
 		95DF9406267137C0007CCF8F /* MovieListSearchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListSearchDataSource.swift; sourceTree = "<group>"; };
 		95DF940B267137FF007CCF8F /* MovieListSearchDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListSearchDataSourceTests.swift; sourceTree = "<group>"; };
+		95DF941326714469007CCF8F /* EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		95DF941426714469007CCF8F /* EmptyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
 		AAC5C0A9C317E1AEBB12EB08 /* Pods-GigiMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GigiMovies.debug.xcconfig"; path = "Target Support Files/Pods-GigiMovies/Pods-GigiMovies.debug.xcconfig"; sourceTree = "<group>"; };
 		ACA75641819A95FCF29B022F /* Pods-GigiMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GigiMovies.release.xcconfig"; path = "Target Support Files/Pods-GigiMovies/Pods-GigiMovies.release.xcconfig"; sourceTree = "<group>"; };
 		B564F600C1975F6EC3E28DED /* Pods_GigiMoviesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GigiMoviesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -269,6 +273,8 @@
 				95DF93152670FD16007CCF8F /* LoadView.xib */,
 				95DF93172670FD16007CCF8F /* ErrorView.swift */,
 				95DF93182670FD16007CCF8F /* ErrorView.xib */,
+				95DF941326714469007CCF8F /* EmptyView.swift */,
+				95DF941426714469007CCF8F /* EmptyView.xib */,
 				95DF93F926713599007CCF8F /* MovieView.swift */,
 				95DF93FE267135CB007CCF8F /* MovieView.xib */,
 				95DF93CB26711586007CCF8F /* MovieTableView.swift */,
@@ -520,6 +526,7 @@
 				95DF93242670FD87007CCF8F /* load.gif in Resources */,
 				95DF931C2670FD16007CCF8F /* ErrorView.xib in Resources */,
 				95DF93D226711586007CCF8F /* LoadTableViewCell.xib in Resources */,
+				95DF941626714469007CCF8F /* EmptyView.xib in Resources */,
 				95DF93FF267135CB007CCF8F /* MovieView.xib in Resources */,
 				95DF93192670FD16007CCF8F /* LoadView.xib in Resources */,
 				95C8F6DE2670F5CF008B0067 /* Main.storyboard in Resources */,
@@ -653,6 +660,7 @@
 			files = (
 				95DF93CF26711586007CCF8F /* MovieTableViewCell.swift in Sources */,
 				95DF936826710664007CCF8F /* MovieModel.swift in Sources */,
+				95DF941526714469007CCF8F /* EmptyView.swift in Sources */,
 				95DF93D126711586007CCF8F /* MovieTableView.swift in Sources */,
 				95DF9407267137C0007CCF8F /* MovieListSearchDataSource.swift in Sources */,
 				95DF93472670FEE2007CCF8F /* UIImageView+Extension.swift in Sources */,

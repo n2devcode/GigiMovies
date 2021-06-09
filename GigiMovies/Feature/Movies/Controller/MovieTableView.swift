@@ -1,8 +1,8 @@
 //
 //  MovieTableView.swift
-//  Marvel
+//  GigiMovies
 //
-//  Created by Anna on 30/05/2021.
+//  Created by Anna on 09/06/2021.
 //
 
 import UIKit
@@ -52,7 +52,11 @@ class MovieTableView: UIView {
         let contentHeight = scrollView.contentSize.height
         if (offsetY > contentHeight - scrollView.frame.height * 4) && !isLoading {
             isLoading = true
-            getMoreMovies()
+            if moviesVC.movieSearch.isEmpty {
+                getMoreMovies()
+            } else {
+                getMoreMoviesSearch()
+            }
         }
     }
     
@@ -60,6 +64,25 @@ class MovieTableView: UIView {
         let page = moviesVC.moviesVM.page+1
         if Utils.isConnectedToNetwork() {
             moviesVC.moviesVM.getData(page: page) {
+                self.uploadData()
+                DispatchQueue.main.async {
+                    self.moviesTableView.reloadData()
+                    self.isLoading = false
+                }
+            } loadError: {
+                Utils.showAlert(self.moviesVC, description: "Ha ocurrido algún error al cargar más películas")
+                self.isLoading = false
+            }
+        } else {
+            Utils.showAlert(moviesVC, description: "No tienes conexión a internet")
+            isLoading = false
+        }
+    }
+    
+    private func getMoreMoviesSearch() {
+        let page = moviesVC.moviesVM.page+1
+        if Utils.isConnectedToNetwork() {
+            moviesVC.moviesVM.getDataSearch(page: page, title: moviesVC.movieSearch) {
                 self.uploadData()
                 DispatchQueue.main.async {
                     self.moviesTableView.reloadData()

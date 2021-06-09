@@ -1,8 +1,8 @@
 //
-//  CharacterTableViewCell.swift
-//  Marvel
+//  MovieTableViewCell.swift
+//  GigiMovies
 //
-//  Created by Anna on 30/05/2021.
+//  Created by Anna on 09/06/2021.
 //
 
 import UIKit

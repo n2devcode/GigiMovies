@@ -25,7 +25,7 @@ class MovieViewModel {
     
     var imageURLString: String {
         let path = movieModel?.poster_path ?? Constants.noData
-        return "https://image.tmdb.org/t/p/w500\(path)"
+        return "\(Constants.baseURLImage)\(path)"
     }
     
     var voteAverage: String {

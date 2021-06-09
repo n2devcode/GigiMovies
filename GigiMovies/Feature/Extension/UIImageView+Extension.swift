@@ -21,7 +21,7 @@ extension UIImageView {
     }
     
     public func loadImage(stringURL: String) {
-        if stringURL == Constants.noData {
+        if stringURL == "\(Constants.baseURLImage)\(Constants.noData)" {
             self.image = UIImage(named: "noImage")
         } else {
             if let url = URL(string: stringURL) {

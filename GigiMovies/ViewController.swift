@@ -14,7 +14,10 @@ class ViewController: BaseViewController {
     
     let moviesVM = MovieListViewModel()
     
+    var movieSearch = ""
+    
     @IBAction func clickAll(_ sender: Any) {
+        movieSearch = ""
         loadData()
     }
     
@@ -24,28 +27,28 @@ class ViewController: BaseViewController {
     
     override func loadData() {
         if Utils.isConnectedToNetwork() {
-            showLoadView()
+            showLoadView(moviesView)
             moviesVM.getData {
                 self.showAllMoviesView()
             } loadError: {
-                self.showErrorView()
+                self.showErrorView(self.moviesView)
             }
         } else {
             Utils.showAlert(self, description: "No tienes conexión a internet")
-            showErrorView()
+            showErrorView(moviesView)
         }
     }
     
-    override func showLoadView() {
+    override func showLoadView(_ view: UIView) {
         if let subview = self.loadView("LoadView") as? LoadView {
-            self.addSubview(view: moviesView, subview: subview)
+            self.addSubview(view: view, subview: subview)
         }
     }
     
-    override func showErrorView() {
+    override func showErrorView(_ view: UIView) {
         if let subview = self.loadView("ErrorView") as? ErrorView {
             subview.moviesVC = self
-            self.addSubview(view: moviesView, subview: subview)
+            self.addSubview(view: view, subview: subview)
         }
     }
     

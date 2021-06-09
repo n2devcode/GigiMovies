@@ -45,6 +45,9 @@ extension MovieListViewModel {
                  loadError fail: (@escaping () -> Void)) {
         let dataSource = MovieListDataSource()
         dataSource.getResponse(page: page, success: { (result) in
+            if page == 1 {
+                self.movieListVM = [MovieViewModel]()
+            }
             self.setMovieListModel(result)
             succeed()
         }, failure: {
@@ -56,8 +59,11 @@ extension MovieListViewModel {
                        title: String,
                        success succeed: (@escaping () -> Void),
                        loadError fail: (@escaping () -> Void)) {
-        let dataSource = MovieListDataSource()
-        dataSource.getResponse(page: page, success: { (result) in
+        let dataSource = MovieListSearchDataSource()
+        dataSource.getResponse(page: page, title: title, success: { (result) in
+            if page == 1 {
+                self.movieListVM = [MovieViewModel]()
+            }
             self.setMovieListModel(result)
             succeed()
         }, failure: {

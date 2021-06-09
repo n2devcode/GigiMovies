@@ -19,6 +19,37 @@ class MovieView: UIView {
     }
     
     @IBAction func clickSearch(_ sender: Any) {
+        moviesVC.movieSearch = searchTextField.text ?? ""
+        
+        if Utils.isConnectedToNetwork() {
+            loadDataSearch(view: movieTableView)
+        } else {
+            Utils.showAlert(moviesVC, description: "No tienes conexión a internet")
+            moviesVC.showErrorView(moviesVC.moviesView)
+        }
+    }
+    
+    private func loadDataSearch(view: UIView) {
+        moviesVC.showLoadView(view)
+        if moviesVC.movieSearch.isEmpty {
+            moviesVC.loadData()
+        } else {
+            moviesVC.moviesVM.getDataSearch(title: moviesVC.movieSearch) {
+                if self.moviesVC.moviesVM.movieListVM.count == 0 {
+                    self.loadEmptyView()
+                } else {
+                    self.loadTable()
+                }
+            } loadError: {
+                self.moviesVC.showErrorView(self.moviesVC.moviesView)
+            }
+        }
+    }
+    
+    private func loadEmptyView() {
+        if let subview = self.moviesVC.loadView("EmptyView") as? EmptyView {
+            self.moviesVC.addSubview(view: movieTableView, subview: subview)
+        }
     }
     
     private func loadTable() {

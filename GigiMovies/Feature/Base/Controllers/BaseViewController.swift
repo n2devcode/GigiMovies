@@ -19,6 +19,6 @@ class BaseViewController: UIViewController, LoadViewProtocol, AddSubviewConstrai
     }
     
     func loadData() {}
-    func showLoadView() {}
-    func showErrorView() {}
+    func showLoadView(_ view: UIView) {}
+    func showErrorView(_ view: UIView) {}
 }
