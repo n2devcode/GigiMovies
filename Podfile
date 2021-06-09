@@ -7,6 +7,7 @@ target 'GigiMovies' do
 
   # Pods for GigiMovies
   pod 'Alamofire', '~> 5.4'
+  pod 'SDWebImage', '~> 5.11'
 
   target 'GigiMoviesTests' do
     inherit! :search_paths

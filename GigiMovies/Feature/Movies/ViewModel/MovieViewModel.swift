@@ -28,8 +28,9 @@ class MovieViewModel {
         return "https://image.tmdb.org/t/p/w500\(path)"
     }
     
-    var voteAverage: Double {
-        return movieModel?.vote_average ?? Constants.noDouble
+    var voteAverage: String {
+        let average = movieModel?.vote_average ?? Constants.noDouble
+        return "Punt.: \(average)"
     }
     
     init() { }

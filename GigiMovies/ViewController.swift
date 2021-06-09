@@ -50,7 +50,10 @@ class ViewController: BaseViewController {
     }
     
     private func showAllMoviesView() {
-        
+        if let subview = self.loadView("MovieTableView") as? MovieTableView {
+            subview.moviesVC = self
+            self.addSubview(view: moviesView, subview: subview)
+        }
     }
     
     private func showFavoritesMoviesView() {

@@ -19,6 +19,10 @@ class MovieListViewModel {
         }
     }
     
+    var page: Int {
+        return movieListModel?.page ?? Constants.noInt
+    }
+    
     var totalPages: Int {
         return movieListModel?.total_pages ?? Constants.noInt
     }

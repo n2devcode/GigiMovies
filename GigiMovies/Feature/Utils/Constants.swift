@@ -13,5 +13,5 @@ class Constants {
     
     static let noData = "-"
     static let noInt = -1
-    static let noDouble: Double = -1
+    static let noDouble: Double = 0
 }
