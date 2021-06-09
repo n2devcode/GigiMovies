@@ -12,6 +12,8 @@ class ViewController: BaseViewController {
     @IBOutlet weak var buttonFavorites: UIButton!
     @IBOutlet weak var moviesView: UIView!
     
+    let moviesVM = MovieListViewModel()
+    
     @IBAction func clickAll(_ sender: Any) {
         loadData()
     }
@@ -21,12 +23,17 @@ class ViewController: BaseViewController {
     }
     
     override func loadData() {
-        showLoadView()
-//        moviesVM.getData {
-//            self.showAllMoviesView()
-//        } loadError: {
-//            self.showErrorView()
-//        }
+        if Utils.isConnectedToNetwork() {
+            showLoadView()
+            moviesVM.getData {
+                self.showAllMoviesView()
+            } loadError: {
+                self.showErrorView()
+            }
+        } else {
+            Utils.showAlert(self, description: "No tienes conexión a internet")
+            showErrorView()
+        }
     }
     
     override func showLoadView() {
