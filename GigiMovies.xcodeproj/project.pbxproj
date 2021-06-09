@@ -38,6 +38,8 @@
 		95DF938C26710B2C007CCF8F /* MovieListDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF938B26710B2C007CCF8F /* MovieListDataSourceTests.swift */; };
 		95DF939426710E22007CCF8F /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF939326710E22007CCF8F /* MoviesModel.swift */; };
 		95DF93A326710E8E007CCF8F /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = 95DF93A226710E8E007CCF8F /* movies.json */; };
+		95DF93AC26711102007CCF8F /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF93AB26711102007CCF8F /* MovieViewModel.swift */; };
+		95DF93C22671132E007CCF8F /* MoviesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF93C12671132E007CCF8F /* MoviesViewModelTests.swift */; };
 		F1A0204E86513B028ABB88EB /* Pods_GigiMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5D5C2906F835DD567ABF0B /* Pods_GigiMovies.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +100,8 @@
 		95DF938B26710B2C007CCF8F /* MovieListDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListDataSourceTests.swift; sourceTree = "<group>"; };
 		95DF939326710E22007CCF8F /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
 		95DF93A226710E8E007CCF8F /* movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = movies.json; path = ../../../Downloads/movies.json; sourceTree = "<group>"; };
+		95DF93AB26711102007CCF8F /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		95DF93C12671132E007CCF8F /* MoviesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModelTests.swift; sourceTree = "<group>"; };
 		AAC5C0A9C317E1AEBB12EB08 /* Pods-GigiMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GigiMovies.debug.xcconfig"; path = "Target Support Files/Pods-GigiMovies/Pods-GigiMovies.debug.xcconfig"; sourceTree = "<group>"; };
 		ACA75641819A95FCF29B022F /* Pods-GigiMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GigiMovies.release.xcconfig"; path = "Target Support Files/Pods-GigiMovies/Pods-GigiMovies.release.xcconfig"; sourceTree = "<group>"; };
 		B564F600C1975F6EC3E28DED /* Pods_GigiMoviesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GigiMoviesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -306,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				95DF936F26710717007CCF8F /* MovieListViewModel.swift */,
+				95DF93AB26711102007CCF8F /* MovieViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 		95DF938926710B00007CCF8F /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				95DF93B3267112EE007CCF8F /* ViewModel */,
 				95DF938A26710B06007CCF8F /* DataSource */,
 				95DF939826710E25007CCF8F /* Models */,
 			);
@@ -349,6 +355,14 @@
 				95DF939326710E22007CCF8F /* MoviesModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		95DF93B3267112EE007CCF8F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				95DF93C12671132E007CCF8F /* MoviesViewModelTests.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -606,6 +620,7 @@
 				95DF9363267103C4007CCF8F /* Constants.swift in Sources */,
 				95DF93252670FD87007CCF8F /* Protocols.swift in Sources */,
 				95DF932E2670FDF1007CCF8F /* BaseViewController.swift in Sources */,
+				95DF93AC26711102007CCF8F /* MovieViewModel.swift in Sources */,
 				95DF933C2670FEBB007CCF8F /* UIImage+Extension.swift in Sources */,
 				95C8F6D72670F5CF008B0067 /* AppDelegate.swift in Sources */,
 				95C8F6D92670F5CF008B0067 /* SceneDelegate.swift in Sources */,
@@ -617,6 +632,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95DF93C22671132E007CCF8F /* MoviesViewModelTests.swift in Sources */,
 				95DF939426710E22007CCF8F /* MoviesModel.swift in Sources */,
 				95C8F6EE2670F5D1008B0067 /* GigiMoviesTests.swift in Sources */,
 				95DF937A26710A98007CCF8F /* UtilsTests.swift in Sources */,

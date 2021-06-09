@@ -8,7 +8,29 @@
 import Foundation
 
 class MovieListViewModel {
+    private var movieListModel: MovieListModel?
     
+    var movieListVM = [MovieViewModel]()
+    private func appendMovieList() {
+        let movieVM = MovieViewModel()
+        for movieModel in (movieListModel?.results ?? []) {
+            let movie = movieVM.getMovie(movieModel)
+            movieListVM.append(movie)
+        }
+    }
+    
+    var totalPages: Int {
+        return movieListModel?.total_pages ?? Constants.noInt
+    }
+    
+    var totalResults: Int {
+        return movieListModel?.total_results ?? Constants.noInt
+    }
+    
+    func setMovieListModel(_ model: MovieListModel) {
+        movieListModel = model
+        appendMovieList()
+    }
 }
 
 // MARK: getData
@@ -19,6 +41,7 @@ extension MovieListViewModel {
                  loadError fail: (@escaping () -> Void)) {
         let dataSource = MovieListDataSource()
         dataSource.getResponse(page: page, success: { (result) in
+            self.setMovieListModel(result)
             succeed()
         }, failure: {
             fail()
