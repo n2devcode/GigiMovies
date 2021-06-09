@@ -52,4 +52,17 @@ extension MovieListViewModel {
         })
     }
     
+    func getDataSearch(page: Int = 1,
+                       title: String,
+                       success succeed: (@escaping () -> Void),
+                       loadError fail: (@escaping () -> Void)) {
+        let dataSource = MovieListDataSource()
+        dataSource.getResponse(page: page, success: { (result) in
+            self.setMovieListModel(result)
+            succeed()
+        }, failure: {
+            fail()
+        })
+    }
+    
 }
