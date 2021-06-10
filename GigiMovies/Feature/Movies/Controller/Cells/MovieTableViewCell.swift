@@ -14,7 +14,21 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var averageLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
     
+    var movieId = 0
+    var isFavorite = false
+    var favoriteMovies = "" {
+        didSet {
+            isFavorite = favoriteMovies.containsId(movieId)
+            favoriteButton.setTitle("Favorita: \(isFavorite ? "Sí" : "No")", for: .normal)
+        }
+    }
+    
     @IBAction func clickFavorite(_ sender: Any) {
+        if isFavorite {
+            
+        } else {
+            
+        }
     }
     
 }

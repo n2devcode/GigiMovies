@@ -13,7 +13,7 @@ class UserRepositoryTests: XCTestCase {
     let userRepository = UserRepository()
 
     override func setUpWithError() throws {
-        userRepository.saveFavoritesUserInfo(forUserID: userID, favorites: "Peliculas")
+        userRepository.saveFavoritesUserInfo(forUserID: userID, "Peliculas")
     }
 
     override func tearDownWithError() throws {

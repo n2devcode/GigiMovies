@@ -15,8 +15,10 @@ class ViewController: BaseViewController {
     @IBOutlet weak var moviesView: UIView!
     
     let moviesVM = MovieListViewModel()
+    let userRepository = UserRepository()
     
     var movieSearch = ""
+    var favoriteMovies = ""
     
     @IBAction func clickAll(_ sender: Any) {
         movieSearch = ""
@@ -28,6 +30,8 @@ class ViewController: BaseViewController {
     }
     
     override func loadData() {
+        favoriteMovies = userRepository.getFavoritesUserInfo()
+        
         setAlphaTabs(all: true)
         if Utils.isConnectedToNetwork() {
             showLoadView(moviesView)

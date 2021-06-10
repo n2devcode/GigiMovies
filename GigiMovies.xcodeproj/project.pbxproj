@@ -13,6 +13,8 @@
 		95A24EFB2670F6E1002E2769 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 95A24EF92670F6E1002E2769 /* Podfile */; };
 		95B2544926722BCB00FFC2E6 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B2544826722BCB00FFC2E6 /* UserRepository.swift */; };
 		95B2544E26722D4300FFC2E6 /* UserRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B2544D26722D4300FFC2E6 /* UserRepositoryTests.swift */; };
+		95B254532672349F00FFC2E6 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B254522672349F00FFC2E6 /* String+Extension.swift */; };
+		95B254592672366300FFC2E6 /* String+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B254582672366300FFC2E6 /* String+ExtensionTests.swift */; };
 		95C8F6D72670F5CF008B0067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8F6D62670F5CF008B0067 /* AppDelegate.swift */; };
 		95C8F6D92670F5CF008B0067 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8F6D82670F5CF008B0067 /* SceneDelegate.swift */; };
 		95C8F6DB2670F5CF008B0067 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8F6DA2670F5CF008B0067 /* ViewController.swift */; };
@@ -83,6 +85,8 @@
 		95A24EF92670F6E1002E2769 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95B2544826722BCB00FFC2E6 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		95B2544D26722D4300FFC2E6 /* UserRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryTests.swift; sourceTree = "<group>"; };
+		95B254522672349F00FFC2E6 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		95B254582672366300FFC2E6 /* String+ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ExtensionTests.swift"; sourceTree = "<group>"; };
 		95C8F6D32670F5CF008B0067 /* GigiMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GigiMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C8F6D62670F5CF008B0067 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95C8F6D82670F5CF008B0067 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +192,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		95B254572672365000FFC2E6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				95B254582672366300FFC2E6 /* String+ExtensionTests.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		95C8F6CA2670F5CF008B0067 = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +244,7 @@
 			children = (
 				95DF938826710AEE007CCF8F /* Feature */,
 				95DF937826710A83007CCF8F /* UtilsTests */,
+				95B254572672365000FFC2E6 /* Extension */,
 				95C8F6ED2670F5D1008B0067 /* GigiMoviesTests.swift */,
 				95C8F6EF2670F5D1008B0067 /* Info.plist */,
 				95DF93A226710E8E007CCF8F /* movies.json */,
@@ -321,6 +334,7 @@
 			children = (
 				95DF933B2670FEBB007CCF8F /* UIImage+Extension.swift */,
 				95DF93462670FEE2007CCF8F /* UIImageView+Extension.swift */,
+				95B254522672349F00FFC2E6 /* String+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -680,6 +694,7 @@
 				95B2544926722BCB00FFC2E6 /* UserRepository.swift in Sources */,
 				95DF9363267103C4007CCF8F /* Constants.swift in Sources */,
 				95DF93252670FD87007CCF8F /* Protocols.swift in Sources */,
+				95B254532672349F00FFC2E6 /* String+Extension.swift in Sources */,
 				95DF932E2670FDF1007CCF8F /* BaseViewController.swift in Sources */,
 				95DF93AC26711102007CCF8F /* MovieViewModel.swift in Sources */,
 				95DF933C2670FEBB007CCF8F /* UIImage+Extension.swift in Sources */,
@@ -694,6 +709,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95B254592672366300FFC2E6 /* String+ExtensionTests.swift in Sources */,
 				95DF93C22671132E007CCF8F /* MoviesViewModelTests.swift in Sources */,
 				95DF940C267137FF007CCF8F /* MovieListSearchDataSourceTests.swift in Sources */,
 				95DF939426710E22007CCF8F /* MoviesModel.swift in Sources */,

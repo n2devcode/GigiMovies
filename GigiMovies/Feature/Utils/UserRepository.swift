@@ -20,16 +20,16 @@ class UserRepository {
         self.userDefaults = userDefaults
     }
     
-    func saveFavoritesUserInfo(forUserID userID: String, favorites: String) {
+    func saveFavoritesUserInfo(forUserID userID: String = "userID", _ favorites: String) {
         saveValue(forKey: .favorites, value: favorites, userID: userID)
     }
     
-    func getFavoritesUserInfo(forUserID userID: String) -> String {
+    func getFavoritesUserInfo(forUserID userID: String = "userID") -> String {
         let favorites: String? = readValue(forKey: .favorites, userID: userID)
         return favorites ?? ""
     }
     
-    func removeUserInfo(forUserID userID: String) {
+    func removeUserInfo(forUserID userID: String = "userID") {
         Key
             .allCases
             .map { $0.make(for: userID) }
