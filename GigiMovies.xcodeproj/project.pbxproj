@@ -11,6 +11,8 @@
 		750E3F616BD95CAC66797D48 /* Pods_GigiMovies_GigiMoviesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A65B481203A3A35C62CE57D /* Pods_GigiMovies_GigiMoviesUITests.framework */; };
 		95A24EFA2670F6E1002E2769 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 95A24EF82670F6E1002E2769 /* README.md */; };
 		95A24EFB2670F6E1002E2769 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 95A24EF92670F6E1002E2769 /* Podfile */; };
+		95B2544926722BCB00FFC2E6 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B2544826722BCB00FFC2E6 /* UserRepository.swift */; };
+		95B2544E26722D4300FFC2E6 /* UserRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B2544D26722D4300FFC2E6 /* UserRepositoryTests.swift */; };
 		95C8F6D72670F5CF008B0067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8F6D62670F5CF008B0067 /* AppDelegate.swift */; };
 		95C8F6D92670F5CF008B0067 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8F6D82670F5CF008B0067 /* SceneDelegate.swift */; };
 		95C8F6DB2670F5CF008B0067 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8F6DA2670F5CF008B0067 /* ViewController.swift */; };
@@ -79,6 +81,8 @@
 		6A65B481203A3A35C62CE57D /* Pods_GigiMovies_GigiMoviesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GigiMovies_GigiMoviesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A24EF82670F6E1002E2769 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		95A24EF92670F6E1002E2769 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95B2544826722BCB00FFC2E6 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		95B2544D26722D4300FFC2E6 /* UserRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryTests.swift; sourceTree = "<group>"; };
 		95C8F6D32670F5CF008B0067 /* GigiMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GigiMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C8F6D62670F5CF008B0067 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95C8F6D82670F5CF008B0067 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -291,6 +295,7 @@
 				95DF93222670FD86007CCF8F /* Protocols.swift */,
 				95DF93232670FD87007CCF8F /* Utils.swift */,
 				95DF9362267103C4007CCF8F /* Constants.swift */,
+				95B2544826722BCB00FFC2E6 /* UserRepository.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -351,6 +356,7 @@
 			isa = PBXGroup;
 			children = (
 				95DF937926710A98007CCF8F /* UtilsTests.swift */,
+				95B2544D26722D4300FFC2E6 /* UserRepositoryTests.swift */,
 			);
 			path = UtilsTests;
 			sourceTree = "<group>";
@@ -671,6 +677,7 @@
 				95DF935A267103A2007CCF8F /* MovieListModel.swift in Sources */,
 				95C8F6DB2670F5CF008B0067 /* ViewController.swift in Sources */,
 				95DF93262670FD87007CCF8F /* Utils.swift in Sources */,
+				95B2544926722BCB00FFC2E6 /* UserRepository.swift in Sources */,
 				95DF9363267103C4007CCF8F /* Constants.swift in Sources */,
 				95DF93252670FD87007CCF8F /* Protocols.swift in Sources */,
 				95DF932E2670FDF1007CCF8F /* BaseViewController.swift in Sources */,
@@ -692,6 +699,7 @@
 				95DF939426710E22007CCF8F /* MoviesModel.swift in Sources */,
 				95C8F6EE2670F5D1008B0067 /* GigiMoviesTests.swift in Sources */,
 				95DF937A26710A98007CCF8F /* UtilsTests.swift in Sources */,
+				95B2544E26722D4300FFC2E6 /* UserRepositoryTests.swift in Sources */,
 				95DF938C26710B2C007CCF8F /* MovieListDataSourceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
