@@ -23,6 +23,8 @@ class MovieTableViewCell: UITableViewCell {
             favoriteButton.setTitle("Favorita: \(isFavorite ? "Sí" : "No")", for: .normal)
         }
     }
+    var isFavoriteView = false
+    var moviesVC = ViewController()
     
     @IBAction func clickFavorite(_ sender: Any) {
         if isFavorite {
@@ -31,7 +33,11 @@ class MovieTableViewCell: UITableViewCell {
             moviesVM.favoriteMovies = moviesVM.favoriteMovies.addId(movieId)
         }
         moviesVM.userRepository.saveFavoritesUserInfo(moviesVM.favoriteMovies)
-        moviesTableView.reloadData()
+        if isFavoriteView {
+            moviesVC.loadFavoritesMoviesView()
+        } else {
+            moviesTableView.reloadData()
+        }
     }
     
 }

@@ -121,6 +121,8 @@ extension MovieTableView: UITableViewDataSource, UITableViewDelegate {
             cell.averageLabel.text = movie.voteAverage
             cell.moviesTableView = moviesTableView
             cell.movieId = movie.movieId
+            cell.moviesVC = moviesVC
+            cell.isFavoriteView = isFavoriteView
             cell.moviesVM = moviesVM
             return cell
         }

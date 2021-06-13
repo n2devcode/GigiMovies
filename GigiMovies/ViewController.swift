@@ -69,7 +69,7 @@ class ViewController: BaseViewController {
         tabFavoritesView.alpha = all ? Constants.alphaTab : 1
     }
     
-    private func loadFavoritesMoviesView() {
+    func loadFavoritesMoviesView() {
         setAlphaTabs(all: false)
         if Utils.isConnectedToNetwork() {
             showLoadView(moviesView)
