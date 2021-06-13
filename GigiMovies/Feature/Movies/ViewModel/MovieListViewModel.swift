@@ -8,6 +8,8 @@
 import Foundation
 
 class MovieListViewModel {
+    let userRepository = UserRepository()
+    
     private var movieListModel: MovieListModel?
     
     var movieListVM = [MovieViewModel]()
@@ -18,6 +20,8 @@ class MovieListViewModel {
             movieListVM.append(movie)
         }
     }
+    var favoriteMovies = ""
+    var favoriteMovieListVM = [MovieViewModel]()
     
     var page: Int {
         return movieListModel?.page ?? Constants.noInt
@@ -34,6 +38,14 @@ class MovieListViewModel {
     func setMovieListModel(_ model: MovieListModel) {
         movieListModel = model
         appendMovieList()
+    }
+    
+    func setFavoriteMovieModel(_ models: [MovieModel]) {
+        let movieVM = MovieViewModel()
+        for movieModel in models {
+            let movie = movieVM.getMovie(movieModel)
+            favoriteMovieListVM.append(movie)
+        }
     }
 }
 
@@ -68,6 +80,22 @@ extension MovieListViewModel {
             succeed()
         }, failure: {
             fail()
+        })
+    }
+    
+    func getDataFavorites(success succeed: (@escaping () -> Void)) {
+        favoriteMovies = userRepository.getFavoritesUserInfo()
+        if favoriteMovies.isEmpty {
+            self.favoriteMovieListVM = [MovieViewModel]()
+            succeed()
+            return
+        }
+        
+        let dataSource = MovieListFavoriteDataSource()
+        dataSource.getResponse(ids: favoriteMovies, success: { (result) in
+            self.favoriteMovieListVM = [MovieViewModel]()
+            self.setFavoriteMovieModel(result)
+            succeed()
         })
     }
     

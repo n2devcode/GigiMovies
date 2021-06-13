@@ -53,7 +53,7 @@ class MovieListSearchDataSourceTests: XCTestCase {
                 XCTAssertEqual(data?.page, page, "returned results not equal to page")
                 XCTAssertEqual(data?.results?.count, num, "returned results not equal to num")
                 XCTAssertEqual(data?.total_pages, 14, "returned results not equal to 14")
-                XCTAssertEqual(data?.total_results, 276, "returned results not equal to 276")
+                XCTAssertEqual(data?.total_results, 277, "returned results not equal to 277")
                 
                 moviesList += data?.results ?? []
                 XCTAssertEqual(moviesList.count, page*num, "returned results not equal to page*num")

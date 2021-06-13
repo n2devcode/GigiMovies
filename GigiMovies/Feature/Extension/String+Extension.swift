@@ -22,6 +22,9 @@ extension String {
     }
     
     public func addId(_ id: Int) -> String {
+        if self.isEmpty {
+            return "\(id)"
+        }
         return "\(self),\(id)"
     }
     

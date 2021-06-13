@@ -15,11 +15,13 @@ class MovieTableView: UIView {
     
     private var isLoading = false
     
+    var isFavoriteView = false
     var moviesVC = ViewController() {
         didSet {
             uploadData()
         }
     }
+    var moviesVM = MovieListViewModel()
     var movieList = [MovieViewModel]()
     var total = 1
     
@@ -30,8 +32,9 @@ class MovieTableView: UIView {
     }
     
     private func uploadData() {
-        movieList = moviesVC.moviesVM.movieListVM
-        total = moviesVC.moviesVM.totalResults
+        moviesVM = moviesVC.moviesVM
+        movieList = isFavoriteView ? moviesVM.favoriteMovieListVM : moviesVM.movieListVM
+        total = isFavoriteView ? moviesVM.favoriteMovieListVM.count : moviesVM.totalResults
     }
     
     private func registerNib() {
@@ -55,48 +58,47 @@ class MovieTableView: UIView {
             if moviesVC.movieSearch.isEmpty {
                 getMoreMovies()
             } else {
-                getMoreMoviesSearch()
+                getMoreMovies(search: true)
             }
         }
     }
     
-    private func getMoreMovies() {
-        let page = moviesVC.moviesVM.page+1
+    private func getMoreMovies(search: Bool = false) {
+        let page = moviesVM.page+1
         if Utils.isConnectedToNetwork() {
-            moviesVC.moviesVM.getData(page: page) {
-                self.uploadData()
-                DispatchQueue.main.async {
-                    self.moviesTableView.reloadData()
-                    self.isLoading = false
+            
+            if search {
+                moviesVM.getDataSearch(page: page, title: moviesVC.movieSearch) {
+                    self.reloadDataMoreMovies()
+                } loadError: {
+                    self.showAlertError()
                 }
-            } loadError: {
-                Utils.showAlert(self.moviesVC, description: "Ha ocurrido algún error al cargar más películas")
-                self.isLoading = false
+            } else {
+                moviesVM.getData(page: page) {
+                    self.reloadDataMoreMovies()
+                } loadError: {
+                    self.showAlertError()
+                }
             }
+            
         } else {
-            Utils.showAlert(moviesVC, description: "No tienes conexión a internet")
-            isLoading = false
+            showAlertError(text: "No tienes conexión a internet")
         }
     }
     
-    private func getMoreMoviesSearch() {
-        let page = moviesVC.moviesVM.page+1
-        if Utils.isConnectedToNetwork() {
-            moviesVC.moviesVM.getDataSearch(page: page, title: moviesVC.movieSearch) {
-                self.uploadData()
-                DispatchQueue.main.async {
-                    self.moviesTableView.reloadData()
-                    self.isLoading = false
-                }
-            } loadError: {
-                Utils.showAlert(self.moviesVC, description: "Ha ocurrido algún error al cargar más películas")
-                self.isLoading = false
-            }
-        } else {
-            Utils.showAlert(moviesVC, description: "No tienes conexión a internet")
-            isLoading = false
+    private func reloadDataMoreMovies() {
+        self.uploadData()
+        DispatchQueue.main.async {
+            self.moviesTableView.reloadData()
+            self.isLoading = false
         }
     }
+    
+    private func showAlertError(text: String = "Ha ocurrido algún error al cargar más películas") {
+        Utils.showAlert(moviesVC, description: text)
+        isLoading = false
+    }
+    
 }
 
 // MARK: UITableViewDataSource, UITableViewDelegate
@@ -119,7 +121,7 @@ extension MovieTableView: UITableViewDataSource, UITableViewDelegate {
             cell.averageLabel.text = movie.voteAverage
             cell.moviesTableView = moviesTableView
             cell.movieId = movie.movieId
-            cell.moviesVC = moviesVC
+            cell.moviesVM = moviesVM
             return cell
         }
         return UITableViewCell()

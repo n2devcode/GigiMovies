@@ -17,20 +17,20 @@ class MovieTableViewCell: UITableViewCell {
     var moviesTableView = UITableView()
     var movieId = 0
     var isFavorite = false
-    var moviesVC = ViewController() {
+    var moviesVM = MovieListViewModel() {
         didSet {
-            isFavorite = moviesVC.favoriteMovies.containsId(movieId)
+            isFavorite = moviesVM.favoriteMovies.containsId(movieId)
             favoriteButton.setTitle("Favorita: \(isFavorite ? "Sí" : "No")", for: .normal)
         }
     }
     
     @IBAction func clickFavorite(_ sender: Any) {
         if isFavorite {
-            moviesVC.favoriteMovies = moviesVC.favoriteMovies.removeId(movieId)
+            moviesVM.favoriteMovies = moviesVM.favoriteMovies.removeId(movieId)
         } else {
-            moviesVC.favoriteMovies = moviesVC.favoriteMovies.addId(movieId)
+            moviesVM.favoriteMovies = moviesVM.favoriteMovies.addId(movieId)
         }
-        moviesVC.userRepository.saveFavoritesUserInfo(moviesVC.favoriteMovies)
+        moviesVM.userRepository.saveFavoritesUserInfo(moviesVM.favoriteMovies)
         moviesTableView.reloadData()
     }
     

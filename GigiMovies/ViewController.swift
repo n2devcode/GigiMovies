@@ -15,10 +15,8 @@ class ViewController: BaseViewController {
     @IBOutlet weak var moviesView: UIView!
     
     let moviesVM = MovieListViewModel()
-    let userRepository = UserRepository()
     
     var movieSearch = ""
-    var favoriteMovies = ""
     
     @IBAction func clickAll(_ sender: Any) {
         movieSearch = ""
@@ -26,12 +24,10 @@ class ViewController: BaseViewController {
     }
     
     @IBAction func clickFavorites(_ sender: Any) {
-        showFavoritesMoviesView()
+        loadFavoritesMoviesView()
     }
     
     override func loadData() {
-        favoriteMovies = userRepository.getFavoritesUserInfo()
-        
         setAlphaTabs(all: true)
         if Utils.isConnectedToNetwork() {
             showLoadView(moviesView)
@@ -73,15 +69,36 @@ class ViewController: BaseViewController {
         tabFavoritesView.alpha = all ? Constants.alphaTab : 1
     }
     
-    private func showFavoritesMoviesView() {
+    private func loadFavoritesMoviesView() {
         setAlphaTabs(all: false)
-        loadEmptyView(moviesView, text: "No tienes favoritas aún")
+        if Utils.isConnectedToNetwork() {
+            showLoadView(moviesView)
+            
+            moviesVM.getDataFavorites() {
+                if self.moviesVM.favoriteMovieListVM.isEmpty {
+                    self.loadEmptyView(self.moviesView, text: "No tienes favoritas aún")
+                } else {
+                    self.showFavoritesMoviesView()
+                }
+            }
+        } else {
+            Utils.showAlert(self, description: "No tienes conexión a internet")
+            showErrorView(moviesView)
+        }
     }
     
     func loadEmptyView(_ view: UIView, text: String) {
         if let subview = self.loadView("EmptyView") as? EmptyView {
             subview.emptyLabel.text = text
             self.addSubview(view: view, subview: subview)
+        }
+    }
+    
+    private func showFavoritesMoviesView() {
+        if let subview = self.loadView("MovieTableView") as? MovieTableView {
+            subview.isFavoriteView = true
+            subview.moviesVC = self
+            self.addSubview(view: moviesView, subview: subview)
         }
     }
 }
